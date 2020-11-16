@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <body>
+        <h1>805 Kitchen Game</h1>
+        <p>
+            CSC-377 
+            <br>
+            Spring Quarter 2020 
+        </p>
+        <div class="panels">
+
+            <hr>
+
+            <h2>About</h2>
+            <p>
+                The game is based off of Call of Duty's Zombie mode, in which the player has to fend off
+                waves of zombies. After defeating a wave, the next wave of zombies increases in size; this
+                trend continuing until the player eventually gets overrun.
+                <br><br>
+                In my game, I followed this format except the zombies are now hungry Cal Poly students
+                and wave completion is based off the player's ability to serve all the customers before
+                the timer runs out and maintain a positive customer satisfaction score.
+                If these conditions are not met, the game automatically exits, leaving the player unable to
+                attempt the next hunger wave.
+                <br><br>
+                I found this project idea cool because it would allow future employees to train digitally and 
+                also experience the magic of working at one of Cal Poly's best on-campus eateries. A potential
+                training method for students unable to perform the primary on-site training due to current
+                arising dilemmas. 
+                <br><br>
+                <img class="border" src="./images/pic8.png"  width=70% height=70% draggable="false" alt="Game">
+            </p>
+
+            <hr>
+
+            <h2>Gameplay</h2>
+            <p>
+                Customer's have a list of specified targets. For example, if the customer currently wants
+                a hamburger, he/she will go to the hamburger serving table and eat any existing hamburger
+                on that table. If there is no hamburger present, the customer will wait at the table until
+                you bring a burger to the burger table. 
+                <br>
+                <br>
+                Customer's also have the chance of asking questions. They will go near the food spawner and
+                their questions will be displayed above their heads. You answer them by clicking the corresponding
+                colored boxes that indicate a chosen answer on their torsos.
+                <br><br>
+                <img src="./images/pic6.png" width=70% height=70% draggable="false" alt="Diagram">
+                <br><br>
+                As a player, you have the simple mechanics of movement, grabbing and dropping food, and spawning food.
+                In short, there are waves of hungry students that you must feed. They will go to certain food tables and
+                your job is to refill the food tables with the corresponding item; answering questions from customers as well.
+                When a customer is satisfied, he/she will leave to through the two exit areas. Once all the customers for that
+                round have been satisfied before the timer runs out and your satisfaction meter is non-negative, the next wave begins.
+                <br><br>
+                <img class="border" src="./images/pic5.png"  width=50% height=50% draggable="false" alt="Question Boys">
+                <img class="border" src="./images/pic7.png"  width=50% height=50% draggable="false" alt="Food Boys">
+            </p>
+
+            <hr>
+
+            <h2>Controls</h2>
+            <ul>
+                <li>WASD Movement Keys.</li>
+                <li>Mouse Look-Around.</li>
+                <li>Left-Click hold to pick up food item.</li>
+                <li>Press '1' to spawn Hamburger.</li>
+                <li>Press '2' to spawn Omelette.</li>
+                <li>Press '3' to spawn Pasta.</li>
+                <li>Press '4' to spawn Salad.</li>
+                <li>Press '5' to spawn Sushi.</li>
+            </ul>
+
+            <hr>
+
+            <h2>What I learned</h2>
+            <ul>
+                <li>Basic Spawner Mechanic.</li>
+                <li>Basic Wave Mechanic.</li>
+                <li>How to use EnemyAI in Unity.</li>
+                <li>Instantiating and editing Prefabs.</li>
+                <li>Manipulation of other scripts through scripts.</li>
+                <li>Implementing Audio Effects.</li>
+                <li>Basic UI impementation.</li>
+                <li>A small understanding of the aspects needed to make an interesting game.</li>
+                <li>treating Gameobjects as a way to store and access a list of Gameobjects.</li>
+            </ul>
+
+            <hr>
+
+            <h2>Code Implementation Examples</h2>
+            <p>
+                Each customer starts off with a target list (randomized list of food and questions). The customer always starts
+                on the first index of its list. Once the customer has made contact with its target, the customer has become satisfied
+                and its target index is incremented to move onto the next target in its list. Once the customer's target index is at max length
+                of the list, the customer is satisfied and leaves.
+                <br><br>
+                <img class="border" src="./images/pic2.png" draggable="false" alt="EnemyAI">
+            </p>
+
+            <p>
+                The wave spawner starts off with 3 enemies and sets up basic statistics for UI to use such as what wave we are on, how many
+                enemies were spawned for this round, etc. If the player has killed all the enemies, the nextWave function is called.
+                <br><br>
+                <img class="border" src="./images/pic1.png" draggable="false" alt="Wave Spawn">
+            </p>
+
+            <hr>
+
+            <h2>
+                Link to Code 
+                <a href="https://drive.google.com/file/d/1FpLX8SZ8CD0dPdiZddPAYf1HtGaDdJFM/view?usp=sharing">Google Drive</a>
+            </h2>
+
+            <hr>
+
+            <h2>Video Game Trailer</h2>
+            <iframe class="border" width="640" height="360" src="https://www.youtube.com/embed/dG_t20ThnC4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+
+        </div>
+
+
+    </body>
+</html>
